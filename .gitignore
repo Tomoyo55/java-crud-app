@@ -1,0 +1,44 @@
+# ==========================================
+# Java 基本設定
+# ==========================================
+*.class
+*.log
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+hs_err_pid*
+replay_pid*
+
+# ==========================================
+# Maven (Spring Boot) 用の設定（超重要！）
+# ==========================================
+/target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.next
+pom.xml.releaseBackup
+release.properties
+dependency-reduced-pom.xml
+build.log
+.mvn/timing.properties
+.mvn/wrapper/.maven-wrapper.log
+
+# ==========================================
+# Eclipse & IDE 設定（Serversも含める）
+# ==========================================
+/Servers/
+.metadata/
+.classpath
+.project
+.settings/
+.factorypath
+
+# ==========================================
+# 追加ファイル・フォルダ
+# ==========================================
+/reference/
+/参考資料/
+memo.txt

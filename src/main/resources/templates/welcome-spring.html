@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome Spring</title>
+
+  <!-- th:がつく属性はタイムリーフ用
+@からのパスはコンテキスト（最上位）からのパス
+staticの下はデプロイ時にコンテキストにコピーされるのでコンテキストルートにcss/style.cssが存在することになる
+{}はコンテキストルートが変わった時にタイムリーフが自動で対応するための方法 -->
+  <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+
+<body>
+
+  <h1>Hello</h1>
+
+  <h2>Welcome Spring</h2>
+
+</body>
+
+</html>
