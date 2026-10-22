@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Parameter</title>
+<link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+	<h2>取得したパラメータの表示</h2>
+
+<!--	挨拶表示の部分がmGreetingで上書きされる-->
+	<p th:text="${mGreeting}">挨拶表示</p>
+	
+<!--	/inputというURLパターンでこのアプリ自身にGETリクエストを送る-->
+	<a th:href="@{/input}">入力画面へ</a>
+
+</body>
+</html>
