@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class ParamControllerPost {
 	
 	@GetMapping("/input")
-	public String inputm() {
+	public String input() {
 		// HTMLテンプレートにwelcome-spring.htmlを指定
 		return "input";
 	}
