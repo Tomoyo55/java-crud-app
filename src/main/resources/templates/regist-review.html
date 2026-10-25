@@ -9,24 +9,45 @@
 
 	<h2>レビュー登録</h2>
 
-    <form th:action="@{/regist-review}" method="POST">
+	<form th:action="@{/regist-review}" method="POST" 
+			th:object="${reviewRegistForm}">
 		【店舗ID】<br>
-		<input type="text" name="restaurantId"><br>
+		<input type="text" th:field="*{restaurantId}"><br>
 		<br>
-    	【利用者ID】<br>
-    	<input type="text" name="userId"><br>
+		【利用者ID】<br>
+		<input type="text" th:field="*{userId}"><br>
 		<br>
-    	【来店日】<br>
-    	<input type="date" name="visitDate"><br>
+		【来店日】<br>
+		<input type="date" th:field="*{visitDate}"><br>
 		<br>
-    	【評価】(1-5)<br>
-		<input type="text" name="rating"><br>
+		【評価】(1-5)<br>
+		<input type="text" th:field="*{rating}"><br>
 		<br>
-    	【一言コメント】<br>
-    	<input type="text"  name="comment" class="comment"><br>
+		【一言コメント】<br>
+		<input type="text" th:field="*{comment}" class="comment" ><br>
 		<br>
-    	<input type="submit" value="登録" class="btn">
-    </form>
+		<input type="submit" value="登録" class="btn">
+	</form>
+	
+	
+<!--    <form th:action="@{/regist-review}" method="POST">-->
+<!--		【店舗ID】<br>-->
+<!--		<input type="text" name="restaurantId" value="1"><br>-->
+<!--		<br>-->
+<!--    	【利用者ID】<br>-->
+<!--    	<input type="text" name="userId"><br>-->
+<!--		<br>-->
+<!--    	【来店日】<br>-->
+<!--    	<input type="date" name="visitDate"><br>-->
+<!--		<br>-->
+<!--    	【評価】(1-5)<br>-->
+<!--		<input type="text" name="rating" value="3"><br>-->
+<!--		<br>-->
+<!--    	【一言コメント】<br>-->
+<!--    	<input type="text"  name="comment" class="comment"><br>-->
+<!--		<br>-->
+<!--    	<input type="submit" value="登録" class="btn">-->
+<!--    </form>-->
 
 </body>
 </html>
